@@ -1,7 +1,6 @@
-package vn.zalopay.KafkaDemo.kafka;
+package com.bkteam.greeter.kafka;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.clients.producer.internals.Sender;
 import org.apache.kafka.common.serialization.IntegerSerializer;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

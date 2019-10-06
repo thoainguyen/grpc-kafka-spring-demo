@@ -1,4 +1,4 @@
-package vn.zalopay.KafkaDemo;
+package com.bkteam.greeter;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import vn.zalopay.KafkaDemo.kafka.KafkaConsumer;
-import vn.zalopay.KafkaDemo.kafka.KafkaProducer;
+import com.bkteam.greeter.kafka.KafkaConsumer;
+import com.bkteam.greeter.kafka.KafkaProducer;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

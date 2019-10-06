@@ -1,4 +1,4 @@
-package vn.zalopay.KafkaDemo.kafka;
+package com.bkteam.greeter.kafka;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -12,9 +12,11 @@ public class KafkaConsumer {
 
     private CountDownLatch latch = new CountDownLatch(1);
 
-    @KafkaListener(topics = "helloworld.t")
+
+    @KafkaListener(topics = "kafka-demo-group.topic1")
     public void receiveMessage(String message) {
         LOGGER.info("received message='{}'", message);
+        System.out.println("received message=" + message);
         latch.countDown();
     }
 

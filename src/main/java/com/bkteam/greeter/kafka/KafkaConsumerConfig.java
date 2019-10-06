@@ -1,4 +1,4 @@
-package vn.zalopay.KafkaDemo.kafka;
+package com.bkteam.greeter.kafka;
 
 
 import java.util.HashMap;
@@ -32,7 +32,7 @@ public class KafkaConsumerConfig {
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         // consumer groups allow a pool of processes to divide the work of
         // consuming and processing records
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "helloworld");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "kafka-demo-group");
 
         return props;
     }

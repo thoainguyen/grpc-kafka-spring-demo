@@ -1,4 +1,4 @@
-package vn.zalopay.KafkaDemo.kafka;
+package com.bkteam.greeter.kafka;
 
 import org.apache.kafka.clients.producer.internals.Sender;
 import org.slf4j.Logger;
